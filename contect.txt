@@ -1,0 +1,53 @@
+Control
+├── Panel
+├── right_container
+│   └── Panel
+├── left_container
+│   └── Panel
+├── middle container
+│   ├── whiteboardcontainer
+│   └── Panel
+├── main
+│   ├── inventory
+│   │   └── InventoryGrid
+│   ├── profile
+│   ├── shop
+│   ├── InventoryButton
+│   ├── leaderboards
+│   └── settings
+├── settings
+│   └── back_setting
+├── profile
+│   └── back_profile
+├── inventory
+│   └── back_inventory
+├── leaderboards
+│   └── back_leaderboards
+├── scroll
+│   ├── playerboard
+│   │   ├── Label
+│   │   ├── p1
+│   │   ├── Label2
+│   │   ├── p2
+│   │   ├── Label3
+│   │   ├── p3
+│   │   ├── Label4
+│   │   ├── p4
+│   │   ├── Label5
+│   │   └── p5
+│   ├── player 1
+│   │   └── back_p1
+│   ├── player 2
+│   │   └── back_p2
+│   ├── player 3
+│   │   └── back_p3
+│   ├── player 4
+│   │   └── back_p4
+│   └── player 5
+│       └── back_p5
+├── Shop
+├── CurrencyLabel
+└── BoardTools
+    ├── EraserToolButton
+    ├── PenToolButton
+    └── TextToolButton

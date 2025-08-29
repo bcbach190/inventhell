@@ -1,0 +1,109 @@
+[gd_scene load_steps=6 format=3 uid="uid://od6v4lqk7otq"]
+
+[ext_resource type="Script" uid="uid://c4aaloj1608ou" path="res://Godot script/Scenes Script/title_screen_page.gd" id="1_qjalg"]
+[ext_resource type="Texture2D" uid="uid://d3qf0oown1w4p" path="res://Images/full_game_logo.png" id="2_rrn07"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q470r"]
+bg_color = Color(0, 0.0352941, 0.0980392, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bm28l"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w73sr"]
+bg_color = Color(0.0156863, 0.207843, 0.415686, 0.313726)
+corner_radius_top_left = 40
+corner_radius_top_right = 40
+corner_radius_bottom_right = 40
+corner_radius_bottom_left = 40
+
+[node name="Control2" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qjalg")
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_q470r")
+
+[node name="GameDescription" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -328.0
+offset_top = 20.0
+offset_right = 337.0
+offset_bottom = 99.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.784314)
+theme_override_font_sizes/normal_font_size = 25
+text = "an online problem-solving and collection game where players compete to prove their math mastery
+"
+
+[node name="StartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -133.0
+offset_top = -155.0
+offset_right = 134.0
+offset_bottom = -37.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_bm28l")
+text = "Press to start"
+
+[node name="LogoBackground" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -301.0
+offset_right = 192.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_w73sr")
+
+[node name="GameLogo" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -361.5
+offset_top = -504.0
+offset_right = 361.5
+offset_bottom = 219.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_rrn07")
+expand_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="mouse_entered" from="StartButton" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="StartButton" to="." method="_on_button_mouse_exited"]
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
