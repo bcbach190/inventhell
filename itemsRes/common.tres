@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://dof3vydhydjwa"]
+
+[ext_resource type="Script" uid="uid://dxn7euvmcxtat" path="res://itemsRes/ItemData.gd" id="1_ch4yu"]
+[ext_resource type="Texture2D" uid="uid://b4kmhojotio0m" path="res://itemsRes/Item_UI/Common.png" id="2_3qoay"]
+
+[resource]
+script = ExtResource("1_ch4yu")
+type = 0
+name = "Common Problem"
+description = "Easy to solve."
+texture = ExtResource("2_3qoay")

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://b65ldsnnqiilp"]
+
+[ext_resource type="Script" uid="uid://dxn7euvmcxtat" path="res://itemsRes/ItemData.gd" id="1_4vrju"]
+[ext_resource type="Texture2D" uid="uid://fjnfc5k2bg6" path="res://itemsRes/Item_UI/Rare.png" id="2_4vrju"]
+
+[resource]
+script = ExtResource("1_4vrju")
+type = 2
+name = "Rare Problem"
+description = "take ur time
+"
+texture = ExtResource("2_4vrju")
